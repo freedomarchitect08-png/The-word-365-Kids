@@ -1057,7 +1057,17 @@ function printCert(){
 .policy-link-btn{flex:1;min-width:140px;padding:11px;border-radius:var(--rlg);border:2px solid #C8D0F0;background:var(--warm);font-family:'Outfit',sans-serif;font-weight:800;font-size:.8rem;cursor:pointer;color:var(--gH);transition:all .2s;text-align:center;display:flex;align-items:center;justify-content:center;gap:7px}
 .policy-link-btn:hover{background:var(--gP);border-color:var(--gM);transform:translateY(-1px)}
 
-</style></head><body><div class="seal">📜✨👑</div><h1>The Word 365 Kids — The Word 365 Kids — Bible Explorer</h1><div class="sub">Certificate of Grand Champion</div><div class="txt">This certifies that</div><div class="name">Grand Champion Explorer</div><div class="txt">has faithfully completed all 12 Bible stories!</div><div class="stories">${STORIES.map(s=>`<div class="chip">${s.e} ${s.t}</div>`).join('')}</div><div class="footer">The Word 365 Kids — Bible Explorer · Freedom Architect Enterprises · ${new Date().getFullYear()}</div><script>window.print()<\/script></body></html>`);w.document.close();
+</style></head><body><div class="seal">📜✨👑</div><h1>The Word 365 Kids — The Word 365 Kids — Bible Explorer</h1><div class="sub">Certificate of Grand Champion</div><div class="txt">This certifies that</div><div class="name">Grand Champion Explorer</div><div class="txt">has faithfully completed all 12 Bible stories!</div><div class="stories">${STORIES.map(s=>`<div class="chip">${s.e} ${s.t}</div>`).join('')}</div><div class="footer">The Word 365 Kids — Bible Explorer · Freedom Architect Enterprises · ${new Date().getFullYear()}</div><script>window.print()<\/script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/The-word-365-Kids/sw.js')
+      .then(reg => console.log('SW registered'))
+      .catch(err => console.log('SW failed:', err));
+  });
+}
+</script>
+</body></html>`);w.document.close();
 }
 function init(){
   const vc=document.getElementById('vchips');
@@ -1439,6 +1449,16 @@ function closePolicy() {
   document.getElementById('policy-overlay').classList.remove('open');
 }
 
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/The-word-365-Kids/sw.js')
+      .then(reg => console.log('SW registered'))
+      .catch(err => console.log('SW failed:', err));
+  });
+}
 </script>
 </body>
 </html>
