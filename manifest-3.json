@@ -1,0 +1,26 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "The Word 365 Kids — Bible Explorer",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Word kids 365",
+  "start_url": " /The-word-365-Kids/",
+  "theme_color": "#000080",
+  "icons": [
+    {
+      "src": "https://freedomarchitect08-png.github.io/icon-192.png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "description": "AI-powered Bible stories, quizzes and prayer for kids ages 4-12",
+  "id": " /The-word-365-Kids/"
+}
