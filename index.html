@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="Word365 Kids">
 <meta name="application-name" content="The Word 365 Kids — Bible Explorer">
 <link rel="apple-touch-icon" href="/icon-192.png">
-<title>The Word 365 Kids — The Word 365 Kids — Bible Explorer</title>
+<title>The Word 365 Kids — Bible Explorer</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
@@ -317,7 +317,7 @@ body{font-family:'Outfit',sans-serif;background:linear-gradient(135deg,#FFFEF7 0
     <div class="hdots"></div>
     <div class="htop">
       <div>
-        <div class="wm">The Word 365 Kids<span> — The Word 365 Kids — Bible Explorer</span></div>
+        <div class="wm">The Word 365 Kids<span> — Bible Explorer</span></div>
         <div class="wmsub">4 Free Stories + Premium Library</div>
         <div class="xpwrap"><div class="xpbar" id="xpbar" style="width:0%"></div></div>
         <div class="xplbl" id="xplbl">0 XP · Explorer Rank</div>
@@ -884,190 +884,9 @@ async function genPrayer(){
 }
 function printCert(){
   const w=window.open('','_blank');
-  w.document.write(`<!DOCTYPE html><html><head><link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#000080">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Word365 Kids">
-<meta name="application-name" content="The Word 365 Kids — Bible Explorer">
-<link rel="apple-touch-icon" href="/icon-192.png">
-<title>The Word 365 Kids — Bible Explorer Certificate</title><style>body{font-family:Georgia,serif;text-align:center;padding:60px;background:#FDFCF8}h1{font-size:2.4rem;color:#4A7C59}.sub{font-size:1.1rem;color:#C8962A;font-weight:bold;margin-bottom:2rem}.name{font-size:1.8rem;font-weight:bold;border-bottom:3px solid #EDB93A;display:inline-block;padding:0 40px 8px;margin:1rem 0}.txt{font-size:1rem;line-height:1.8;color:#2E4A36;max-width:500px;margin:1rem auto}.seal{font-size:3.5rem;margin:1.5rem 0}.stories{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:1.5rem auto;max-width:480px}.chip{background:#E8F5EC;border-radius:50px;padding:5px 14px;font-size:.82rem;font-weight:bold;color:#4A7C59}.footer{margin-top:2rem;font-size:.85rem;color:#8D6E63;border-top:2px solid #BDE4C7;padding-top:1rem}
-/* ── AUDIO SYSTEM ── */
-.audio-bar{display:flex;align-items:center;gap:8px;background:var(--gP);border-radius:var(--rp);padding:7px 12px;margin-bottom:.85rem;border:1.5px solid var(--gS)}
-.play-btn{width:34px;height:34px;border-radius:50%;border:none;background:#000080;color:#fff;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
-.play-btn:hover{background:var(--gM);transform:scale(1.08)}
-.play-btn.playing{background:var(--gold)}
-.audio-label{font-size:.75rem;font-weight:800;color:var(--gH);flex:1}
-.premium-badge{font-size:.6rem;font-weight:900;background:var(--gold);color:#000080;padding:2px 7px;border-radius:var(--rp);letter-spacing:.4px;cursor:pointer;white-space:nowrap;border:none;font-family:'Outfit',sans-serif}
-.premium-badge.active{background:var(--gH)}
-.audio-progress{height:4px;background:rgba(74,124,89,.2);border-radius:var(--rp);margin-top:5px;overflow:hidden;display:none}
-.audio-progress.show{display:block}
-.audio-progress-bar{height:100%;background:#000080;border-radius:var(--rp);width:0%;transition:width .3s}
-.el-setup{background:var(--goldP);border-radius:var(--rlg);padding:.9rem 1rem;margin-bottom:.85rem;border:1.5px solid var(--goldBd);display:none}
-.el-setup.show{display:block}
-.el-setup p{font-size:.78rem;font-weight:700;color:var(--inkM);margin-bottom:.5rem}
-.el-setup input{width:100%;padding:8px 12px;border-radius:var(--rp);border:1.5px solid var(--goldBd);font-family:'Outfit',sans-serif;font-size:.82rem;outline:none;color:var(--ink);background:#fff;margin-bottom:.5rem}
-.el-setup input:focus{border-color:var(--gold)}
-.el-setup button{padding:7px 14px;border-radius:var(--rp);border:none;background:var(--gold);color:#000080;font-family:'Outfit',sans-serif;font-weight:800;font-size:.78rem;cursor:pointer}
-
-
-/* ── PARENT DASHBOARD ── */
-.parent-btn{position:fixed;bottom:24px;right:20px;background:#000080;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);z-index:90;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.parent-btn:hover{background:var(--gM);transform:scale(1.08)}
-.pin-overlay{position:fixed;inset:0;background:rgba(15,30,20,.85);z-index:200;display:none;align-items:center;justify-content:center}
-.pin-overlay.open{display:flex}
-.pin-box{background:var(--warm);border-radius:var(--rxl);padding:2rem 1.5rem;width:100%;max-width:340px;text-align:center;margin:1rem}
-.pin-title{font-family:'Fredoka',cursive;font-size:1.2rem;font-weight:700;color:var(--gH);margin-bottom:.4rem}
-.pin-sub{font-size:.78rem;color:var(--inkS);font-weight:600;margin-bottom:1.2rem}
-.pin-dots{display:flex;gap:12px;justify-content:center;margin-bottom:1.4rem}
-.pin-dot{width:14px;height:14px;border-radius:50%;border:2px solid #C8D0F0;background:transparent;transition:all .2s}
-.pin-dot.filled{background:#000080;border-color:#000080}
-.pin-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1rem}
-.pin-key{padding:14px;border-radius:var(--rlg);border:2px solid #C8D0F0;background:var(--warm);font-family:'Outfit',sans-serif;font-weight:800;font-size:1.2rem;cursor:pointer;color:var(--ink);transition:all .15s}
-.pin-key:hover{background:var(--gP);border-color:var(--gM)}
-.pin-key:active{transform:scale(.94)}
-.pin-error{color:#B71C1C;font-size:.78rem;font-weight:700;min-height:18px}
-.pin-link{font-size:.72rem;color:var(--inkS);font-weight:600;cursor:pointer;margin-top:.5rem;text-decoration:underline}
-.dash-overlay{position:fixed;inset:0;background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);z-index:199;display:none;overflow-y:auto}
-.dash-overlay.open{display:block}
-.dash-header{background:linear-gradient(135deg,#000080 0%,#1A1A9A 100%);padding:1.4rem 1.4rem 1.2rem;position:relative;overflow:hidden}
-.dash-hdots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1.5px,transparent 1.5px);background-size:24px 24px}
-.dash-back{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.2);border:none;color:#fff;font-size:.8rem;font-weight:800;padding:7px 14px;border-radius:var(--rp);cursor:pointer;font-family:'Outfit',sans-serif;z-index:2}
-.dash-back:hover{background:rgba(255,255,255,.3)}
-.dash-title{font-family:'Fredoka',cursive;font-size:1.6rem;font-weight:900;color:#fff;position:relative}
-.dash-title span{color:var(--goldL)}
-.dash-sub{font-size:.72rem;color:rgba(255,255,255,.55);font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-top:3px;position:relative}
-.dash-body{padding:1.2rem;max-width:680px;margin:0 auto}
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:1.2rem}
-.stat-card{background:var(--warm);border-radius:var(--rlg);padding:1rem;text-align:center;border:2px solid #C8D0F0}
-.stat-num{font-family:'Fredoka',cursive;font-size:2rem;font-weight:900;color:var(--gH);line-height:1}
-.stat-label{font-size:.7rem;font-weight:800;color:var(--inkS);margin-top:4px;letter-spacing:.3px;text-transform:uppercase}
-.stat-sub{font-size:.65rem;color:var(--inkS);margin-top:2px}
-.dash-sh{font-family:'Fredoka',cursive;font-size:1rem;font-weight:700;color:var(--gH);margin-bottom:.75rem;display:flex;align-items:center;gap:8px}
-.dash-sh .al{flex:1;height:2px;background:linear-gradient(90deg,var(--goldB),transparent)}
-.streak-bar{background:var(--warm);border-radius:var(--rlg);padding:1rem 1.1rem;border:2px solid #C8D0F0;margin-bottom:1.1rem}
-.streak-days{display:flex;gap:6px;margin-top:.7rem;flex-wrap:wrap}
-.streak-day{width:32px;height:32px;border-radius:var(--rmd);border:2px solid #C8D0F0;background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:800;color:var(--inkS)}
-.streak-day.done{background:#000080;border-color:#000080;color:#fff}
-.streak-day.today{border-color:var(--goldB);background:var(--goldP);color:#D4AF37}
-.story-progress-list{display:flex;flex-direction:column;gap:8px;margin-bottom:1.1rem}
-.spl-row{background:var(--warm);border-radius:var(--rlg);padding:.85rem 1rem;border:2px solid var(--gP);overflow:hidden}
-.spl-row.complete{border-color:var(--goldBd);background:var(--goldP)}
-.spl-top{display:flex;align-items:center;gap:10px;margin-bottom:.5rem}
-.spl-img{width:48px;height:36px;object-fit:cover;border-radius:6px;flex-shrink:0}
-.spl-name{font-weight:800;font-size:.82rem;color:var(--ink);flex:1}
-.spl-score{font-size:.7rem;font-weight:800;color:var(--gold)}
-.spl-mini-bar{height:5px;background:#e0ddd5;border-radius:var(--rp);overflow:hidden}
-.spl-mini-fill{height:100%;border-radius:var(--rp);background:#000080;transition:width .4s}
-.spl-steps{display:flex;gap:5px;margin-top:.45rem}
-.spl-step{flex:1;text-align:center;font-size:.58rem;font-weight:700;padding:3px 2px;border-radius:4px;background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);color:var(--inkS)}
-.spl-step.done{background:#000080;color:#fff}
-.quiz-list{display:flex;flex-direction:column;gap:6px;margin-bottom:1.1rem}
-.quiz-row{background:var(--warm);border-radius:var(--rmd);padding:.7rem .9rem;border:1.5px solid var(--gP);display:flex;align-items:center;gap:10px}
-.quiz-row img{width:36px;height:28px;object-fit:cover;border-radius:5px;flex-shrink:0}
-.quiz-name{font-weight:700;font-size:.78rem;color:var(--ink);flex:1}
-.quiz-score{font-size:.75rem;font-weight:900;padding:3px 9px;border-radius:var(--rp)}
-.quiz-score.great{background:#E8F5EC;color:var(--gH)}
-.quiz-score.ok{background:var(--goldP);color:var(--gold)}
-.quiz-score.none{background:#f5f5f5;color:var(--inkS)}
-.child-card{background:var(--warm);border-radius:var(--rlg);padding:1rem 1.1rem;border:2px solid #C8D0F0;margin-bottom:1.1rem;display:flex;align-items:center;gap:14px}
-.child-avatar{width:52px;height:52px;border-radius:50%;background:#000080;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
-.child-name-input{font-family:'Outfit',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);border:none;background:transparent;outline:none;width:100%}
-.child-name-input:focus{border-bottom:2px solid var(--gM)}
-.change-pin-btn{background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);color:var(--inkS);border:1.5px solid var(--gS);border-radius:var(--rp);padding:6px 14px;font-family:'Outfit',sans-serif;font-weight:700;font-size:.75rem;cursor:pointer}
-.change-pin-btn:hover{background:var(--gP)}
-.tip-box{background:var(--goldP);border-radius:var(--rlg);padding:.9rem 1rem;border:1.5px solid var(--goldBd);margin-bottom:1.1rem}
-.tip-box p{font-size:.78rem;font-weight:700;color:var(--inkM);line-height:1.7}
-
-
-/* ── SUBSCRIPTION MANAGEMENT ── */
-.sub-section{background:var(--warm);border-radius:var(--rlg);border:2px solid #C8D0F0;overflow:hidden;margin-bottom:1.1rem}
-.sub-header{background:linear-gradient(135deg,#000080 0%,#1A1A9A 100%);padding:.9rem 1.1rem;display:flex;align-items:center;gap:10px}
-.sub-header-icon{font-size:1.4rem;line-height:1}
-.sub-header-text{flex:1}
-.sub-header-title{font-family:'Fredoka',cursive;font-size:.95rem;font-weight:700;color:#fff}
-.sub-header-sub{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:600;margin-top:2px}
-.sub-body{padding:1rem 1.1rem}
-.sub-plan-row{display:flex;align-items:center;gap:10px;padding:.75rem .9rem;border-radius:var(--rlg);border:2px solid #C8D0F0;background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);margin-bottom:.75rem}
-.sub-plan-row.active-plan{border-color:var(--goldBd);background:var(--goldP)}
-.sub-plan-row.active-plan .plan-status{background:var(--gold);color:#000080}
-.plan-icon{font-size:1.5rem;line-height:1;flex-shrink:0}
-.plan-info{flex:1}
-.plan-name{font-weight:800;font-size:.85rem;color:var(--ink)}
-.plan-desc{font-size:.68rem;color:var(--inkS);font-weight:600;margin-top:2px}
-.plan-price{font-size:.72rem;font-weight:900;color:var(--gH)}
-.plan-status{font-size:.6rem;font-weight:900;padding:3px 8px;border-radius:var(--rp);background:#F0F4FF;color:#000080;letter-spacing:.3px}
-.sub-features{display:flex;flex-direction:column;gap:5px;margin-bottom:.9rem}
-.sub-feature{display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;color:var(--inkM)}
-.sub-feature .feat-icon{font-size:.9rem;flex-shrink:0}
-.sub-feature.locked{color:var(--inkS);opacity:.55}
-.sub-divider{height:1px;background:var(--gP);margin:.8rem 0}
-.cancel-flow{display:none}
-.cancel-flow.show{display:block}
-.cancel-reason-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:.85rem}
-.cancel-reason-btn{padding:9px 8px;border-radius:var(--rlg);border:2px solid #C8D0F0;background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);font-family:'Outfit',sans-serif;font-weight:700;font-size:.72rem;cursor:pointer;color:var(--inkM);text-align:center;transition:all .2s;line-height:1.4}
-.cancel-reason-btn:hover{border-color:var(--gM);background:var(--gP)}
-.cancel-reason-btn.selected{border-color:var(--gH);background:#000080;color:#fff}
-.cancel-confirm-box{background:#FFF3F3;border-radius:var(--rlg);border:1.5px solid #EF9A9A;padding:.9rem 1rem;margin-bottom:.85rem}
-.cancel-confirm-box p{font-size:.78rem;font-weight:700;color:#B71C1C;line-height:1.7}
-.sub-action-row{display:flex;gap:8px;flex-wrap:wrap}
-.sub-btn{flex:1;min-width:120px;padding:10px 14px;border-radius:var(--rp);border:none;font-family:'Outfit',sans-serif;font-weight:800;font-size:.82rem;cursor:pointer;transition:all .2s}
-.sub-btn:hover{transform:translateY(-1px)}
-.sub-btn-primary{background:#000080;color:#fff}
-.sub-btn-primary:hover{background:var(--gM)}
-.sub-btn-gold{background:var(--gold);color:#000080}
-.sub-btn-gold:hover{background:var(--goldB)}
-.sub-btn-danger{background:transparent;border:1.5px solid #EF9A9A!important;color:#C62828;border-radius:var(--rp);padding:10px 14px;font-family:'Outfit',sans-serif;font-weight:800;font-size:.82rem;cursor:pointer}
-.sub-btn-danger:hover{background:#FFF3F3}
-.sub-btn-ghost{background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);color:var(--inkS);border:1.5px solid var(--gS)!important}
-.paused-banner{background:var(--goldP);border-radius:var(--rlg);border:1.5px solid var(--goldBd);padding:.8rem 1rem;margin-bottom:.75rem;display:none}
-.paused-banner.show{display:flex;align-items:center;gap:10px}
-.cancelled-banner{background:#FFF3F3;border-radius:var(--rlg);border:1.5px solid #EF9A9A;padding:.8rem 1rem;margin-bottom:.75rem;display:none}
-.cancelled-banner.show{display:flex;align-items:center;gap:10px}
-.retention-offer{background:linear-gradient(135deg,#F0F4FF 0%,#FFFBF0 100%);border-radius:var(--rlg);border:2px solid var(--goldBd);padding:1rem 1.1rem;margin-bottom:.85rem;display:none;text-align:center}
-.retention-offer.show{display:block}
-.retention-offer .offer-title{font-family:'Fredoka',cursive;font-size:1rem;font-weight:700;color:var(--gH);margin-bottom:.4rem}
-.retention-offer .offer-desc{font-size:.78rem;color:var(--inkM);font-weight:600;line-height:1.6;margin-bottom:.8rem}
-.offer-badge{display:inline-block;background:var(--gold);color:#000080;font-size:.72rem;font-weight:900;padding:4px 12px;border-radius:var(--rp);margin-bottom:.7rem;letter-spacing:.3px}
-
-
-/* ── POLICY PAGES ── */
-.policy-overlay{position:fixed;inset:0;background:linear-gradient(135deg,#FFFEF7 0%,#FFFBF0 100%);z-index:300;display:none;overflow-y:auto}
-.policy-overlay.open{display:block}
-.policy-header{background:linear-gradient(135deg,#000080 0%,#1A1A9A 100%);padding:1.3rem 1.4rem;position:relative;overflow:hidden;display:flex;align-items:center;gap:14px}
-.policy-hdots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1.5px,transparent 1.5px);background-size:24px 24px}
-.policy-back{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.2);border:none;color:#fff;font-size:.8rem;font-weight:800;padding:7px 14px;border-radius:var(--rp);cursor:pointer;font-family:'Outfit',sans-serif;z-index:2}
-.policy-icon{font-size:2rem;position:relative;line-height:1;flex-shrink:0}
-.policy-title{font-family:'Fredoka',cursive;font-size:1.4rem;font-weight:900;color:#fff;position:relative;line-height:1.1}
-.policy-updated{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:600;margin-top:4px;position:relative}
-.policy-body{max-width:680px;margin:0 auto;padding:1.4rem}
-.policy-section{background:var(--warm);border-radius:var(--rlg);padding:1.2rem 1.3rem;margin-bottom:1rem;border:1.5px solid var(--gS)}
-.policy-section-title{font-family:'Fredoka',cursive;font-size:1rem;font-weight:700;color:var(--gH);margin-bottom:.7rem;display:flex;align-items:center;gap:8px}
-.policy-section-title .ps-icon{font-size:1rem}
-.policy-section p{font-size:.82rem;line-height:1.8;color:var(--inkM);margin-bottom:.6rem}
-.policy-section p:last-child{margin-bottom:0}
-.policy-section ul{padding-left:1.2rem;margin-bottom:.6rem}
-.policy-section ul li{font-size:.82rem;line-height:1.8;color:var(--inkM);margin-bottom:.2rem}
-.policy-section strong{color:var(--ink);font-weight:800}
-.policy-contact-box{background:#FFFBF0;border-radius:var(--rlg);padding:1rem 1.2rem;border:1.5px solid #FFE89B;text-align:center;margin-bottom:1rem}
-.policy-contact-box p{font-size:.82rem;color:var(--inkM);font-weight:600;line-height:1.7}
-.policy-contact-box a{color:var(--gold);font-weight:800;text-decoration:none}
-.policy-footer{text-align:center;padding:.5rem 0 1.5rem;font-size:.7rem;color:var(--inkS);font-weight:600}
-.policy-link-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem}
-.policy-link-btn{flex:1;min-width:140px;padding:11px;border-radius:var(--rlg);border:2px solid #C8D0F0;background:var(--warm);font-family:'Outfit',sans-serif;font-weight:800;font-size:.8rem;cursor:pointer;color:var(--gH);transition:all .2s;text-align:center;display:flex;align-items:center;justify-content:center;gap:7px}
-.policy-link-btn:hover{background:var(--gP);border-color:var(--gM);transform:translateY(-1px)}
-
-</style></head><body><div class="seal">📜✨👑</div><h1>The Word 365 Kids — The Word 365 Kids — Bible Explorer</h1><div class="sub">Certificate of Grand Champion</div><div class="txt">This certifies that</div><div class="name">Grand Champion Explorer</div><div class="txt">has faithfully completed all 12 Bible stories!</div><div class="stories">${STORIES.map(s=>`<div class="chip">${s.e} ${s.t}</div>`).join('')}</div><div class="footer">The Word 365 Kids — Bible Explorer · Freedom Architect Enterprises · ${new Date().getFullYear()}</div><script>window.print()<\/script>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/The-word-365-Kids/sw.js')
-      .then(reg => console.log('SW registered'))
-      .catch(err => console.log('SW failed:', err));
-  });
-}
-</script>
-</body></html>`);w.document.close();
+  const stories=STORIES.map(s=>'<span style="background:#F0F4FF;border-radius:20px;padding:4px 10px;font-size:12px;font-weight:700;color:#000080;margin:3px;display:inline-block">'+s.e+' '+s.t+'</span>').join('');
+  w.document.write('<!DOCTYPE html><html><head><title>Certificate</title><style>body{font-family:Georgia,serif;text-align:center;padding:60px;background:#FFFEF7}h1{font-size:2.4rem;color:#000080}.sub{font-size:1.1rem;color:#D4AF37;font-weight:bold;margin-bottom:2rem}.name-line{font-size:1.8rem;font-weight:bold;border-bottom:3px solid #D4AF37;display:inline-block;padding:0 40px 8px;margin:1rem 0}.txt{font-size:1rem;line-height:1.8;color:#243B53;max-width:500px;margin:1rem auto}.seal{font-size:3.5rem;margin:1.5rem 0}.stories{max-width:480px;margin:1.5rem auto}.footer{margin-top:2rem;font-size:.85rem;color:#486581;border-top:2px solid #D4AF37;padding-top:1rem}</style></head><body><div class="seal">&#128220;&#10024;&#128081;</div><h1>The Word 365 Kids</h1><div class="sub">Certificate of Grand Champion</div><div class="txt">This certifies that</div><div class="name-line">Grand Champion Explorer</div><div class="txt">has faithfully completed all 12 Bible stories!</div><div class="stories">'+stories+'</div><div class="footer">The Word 365 Kids &#8212; Bible Explorer &middot; Freedom Architect Enterprises &middot; Maryland, USA &middot; '+new Date().getFullYear()+'</div><' + 'script>window.print()<\/script></body></html>');
+  w.document.close();
 }
 function init(){
   const vc=document.getElementById('vchips');
@@ -1349,7 +1168,7 @@ const POLICIES = {
         <strong>Freedom Architect Enterprises · Maryland, USA</strong><br/>
         We respond within 1–2 business days.</p>
       </div>
-      <div class="policy-footer">© 2025 Freedom Architect Enterprises · Maryland, USA · The Word 365 Kids — The Word 365 Kids — Bible Explorer · All rights reserved.</div>
+      <div class="policy-footer">© 2025 Freedom Architect Enterprises · Maryland, USA · The Word 365 Kids — Bible Explorer · All rights reserved.</div>
     `
   },
   privacy: {
@@ -1359,7 +1178,7 @@ const POLICIES = {
     body: `
       <div class="policy-section">
         <div class="policy-section-title"><span class="ps-icon">👋</span>Introduction</div>
-        <p><strong>Freedom Architect Enterprises</strong> ("we," "us," or "our"), located in the State of <strong>Maryland, USA</strong>, operates The Word 365 Kids — The Word 365 Kids — Bible Explorer app. We are committed to protecting the privacy of children and their families and comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and applicable Maryland and federal data protection laws.</p>
+        <p><strong>Freedom Architect Enterprises</strong> ("we," "us," or "our"), located in the State of <strong>Maryland, USA</strong>, operates The Word 365 Kids — Bible Explorer app. We are committed to protecting the privacy of children and their families and comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and applicable Maryland and federal data protection laws.</p>
       </div>
       <div class="policy-section">
         <div class="policy-section-title"><span class="ps-icon">📊</span>Information We Collect</div>
@@ -1429,7 +1248,7 @@ const POLICIES = {
         <strong>Freedom Architect Enterprises · Maryland, USA</strong><br/>
         We respond within 5 business days.</p>
       </div>
-      <div class="policy-footer">© 2025 Freedom Architect Enterprises · Maryland, USA · The Word 365 Kids — The Word 365 Kids — Bible Explorer · All rights reserved.</div>
+      <div class="policy-footer">© 2025 Freedom Architect Enterprises · Maryland, USA · The Word 365 Kids — Bible Explorer · All rights reserved.</div>
     `
   }
 };
@@ -1451,14 +1270,6 @@ function closePolicy() {
 
 </script>
 
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/The-word-365-Kids/sw.js')
-      .then(reg => console.log('SW registered'))
-      .catch(err => console.log('SW failed:', err));
-  });
-}
-</script>
+
 </body>
 </html>
