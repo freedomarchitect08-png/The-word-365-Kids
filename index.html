@@ -958,6 +958,8 @@ function stopAudio() {
 async function speakText(text, btnEl, progressEl) {
   if (speaking) { stopAudio(); return; }
   if (!text || text.includes('Tap the button') || text.includes('will appear here')) return;
+  // Strip emojis before speaking
+  text = text.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}]/gu, '').replace(/\s+/g, ' ').trim();
 
   speaking = true;
   btnEl.classList.add('playing');
